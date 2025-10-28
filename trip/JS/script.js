@@ -1,12 +1,12 @@
 const homePage = document.getElementById('Home-page');
 
-let scrollSpeed = 1; 
+let scrollSpeed = 1;
 let scrollInterval = setInterval(() => {
     homePage.scrollLeft += scrollSpeed;
     if (homePage.scrollLeft >= homePage.scrollWidth / 2) {
-        homePage.scrollLeft = 0; 
+        homePage.scrollLeft = 0;
     }
-}, 30); 
+}, 30);
 
 // Get modal elements
 const loginModal = document.getElementById('loginModal');
@@ -21,27 +21,27 @@ const loginClose = document.getElementById('loginClose');
 const signupClose = document.getElementById('signupClose');
 
 // Show Login Modal
-loginBtn.onclick = function() {
+loginBtn.onclick = function () {
     loginModal.style.display = 'flex';
 }
 
 // Show Signup Modal
-signupBtn.onclick = function() {
+signupBtn.onclick = function () {
     signupModal.style.display = 'flex';
 }
 
 // Close Login Modal
-loginClose.onclick = function() {
+loginClose.onclick = function () {
     loginModal.style.display = 'none';
 }
 
 // Close Signup Modal
-signupClose.onclick = function() {
+signupClose.onclick = function () {
     signupModal.style.display = 'none';
 }
 
 // Close modals when clicking outside the content
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == loginModal) {
         loginModal.style.display = 'none';
     }
@@ -49,6 +49,7 @@ window.onclick = function(event) {
         signupModal.style.display = 'none';
     }
 }
+//console.log
 
 function toggleDropdown() {
     var dropdownContent = document.querySelector('.dropdown-content');
@@ -56,7 +57,7 @@ function toggleDropdown() {
 }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         for (var i = 0; i < dropdowns.length; i++) {
