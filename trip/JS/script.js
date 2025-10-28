@@ -50,6 +50,7 @@ window.onclick = function (event) {
     }
 }
 //console.log
+//console.log("added");
 
 function toggleDropdown() {
     var dropdownContent = document.querySelector('.dropdown-content');
